@@ -18,6 +18,7 @@ struct AddAssignmentView: View {
             Form {
                 Picker("Courses", selection: $course) {
                     ForEach(Self.courses, id: \.self) { course in
+                        Text(course)
                     }
                 }
                 TextField("Description", text: $description)
